@@ -52,4 +52,9 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-reports
+ test:
+   override:
+    - pytest tests/test_login.py
+          
+          
           
