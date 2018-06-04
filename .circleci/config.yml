@@ -47,6 +47,3 @@ jobs:
           command: |
             . venv/bin/activate
             pytest test/test_login.py
-      - store_artifacts:
-          path: test-reports
-          destination: test-reports
