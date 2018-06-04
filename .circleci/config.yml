@@ -12,6 +12,9 @@ jobs:
       # - image: circleci/postgres:9.4
 
     working_directory: ~/repo
+    branches:
+      only:
+        -circleci_test
 
     steps:
       - checkout
