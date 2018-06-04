@@ -37,7 +37,7 @@ jobs:
             - ./venv
           key: v1-dependencies-{{ checksum "requirements.txt" }}
       - run:
-          name: run tests
+          name: run tests login
           command: |
             . venv/bin/activate
             pytest test/test_login.py
